@@ -29,12 +29,25 @@
                 "glob": "*.{js,css,html,png}",
                 "input": "./node_modules/swagger-ui-dist",
                 "output": "swagger-ui",
-                "ignore": ["**/index.html"]
+                "ignore": [
+                  "**/index.html"
+                ]
               },
-              { "glob": "axios.min.js", "input": "./node_modules/axios/dist", "output": "swagger-ui" },
-              { "glob": "**/*", "input": "src/main/webapp/swagger-ui/", "output": "swagger-ui" }
+              {
+                "glob": "axios.min.js",
+                "input": "./node_modules/axios/dist",
+                "output": "swagger-ui"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/main/webapp/swagger-ui/",
+                "output": "swagger-ui"
+              }
             ],
-            "styles": ["src/main/webapp/content/scss/vendor.scss", "src/main/webapp/content/scss/global.scss"],
+            "styles": [
+              "src/main/webapp/content/scss/vendor.scss",
+              "src/main/webapp/content/scss/global.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -95,6 +108,7 @@
   },
   "defaultProject": "gestion-pratimoine",
   "cli": {
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "analytics": false
   }
 }
